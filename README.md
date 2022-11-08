@@ -1,7 +1,7 @@
 # Aalto University
 # Coding Virtual Worlds - Assignment 3
 
-This document aims at presenting the features implemented for the third assignment of Coding Virtual Worlds. The assignment consists in the creation of a simple Bowling VR game, as well as a simple scene that can be explored by moving around using the Oculus controllers.
+Third assignment of the course Coding Virtual Worlds, held at Aalto University. The assignment consists in the creation of a simple Bowling VR game, as well as a simple scene that can be explored by moving around using the Oculus controllers.<br>
 This assignment was focused on learning the main functionalities provided by the XR Interaction Toolkit, including teleportation, continuous movement, snap movement, grab/release interactions and others.
 
 More in detail, my implementation covers the following working functionalities:
@@ -15,7 +15,7 @@ Both the bowling ball and the pins have colliders, and can collide with each oth
 Additionally, the fallen pins are destroyed after 2 seconds since the fall, using the script that is explained in the next point.
 
 - **Scoring board counts** (0.5 point):<br>
-The points are counted with the help of an invisible "detector" plane, that is located at approximately two thirds of the pins' height (touching the "neck" of the pins). This plane uses OnTriggerExit, which is activated when a pin falls down, thus exiting the plane's collider.
+The points are counted with the help of an invisible "detector" plane, that is located at approximately two thirds of the pins' height (touching the "neck" of the pins). This plane uses OnTriggerExit, which is activated when a pin falls down, thus exiting the plane's collider.<br>
 The handler then proceeds to increment the score by one for each fallen pin; the same handler is used to check how many pins are still standing, in order to implement the "Reset pins" feature (see below).<br><br>
 Important note: since it was not further specified, the scoring system does not implement the rules of a real bowling game; the in-game score is simply the total number of fallen pins, and the 10 pins only reset after all the pins have fallen, as requested in "Reset pins".
 
@@ -58,7 +58,7 @@ The XR ray was changed to have a projectile shape, and its color was changed to 
 - **Add tunneling vignette to continuous movement for comfort** (0.5 point):<br>
 A tunneling vignette was added for both continuous movement and continuous turn. The XR Origin's camera has a child object with the material and script to handle the fade-in/fade-out of the vignette when the player moves/stops.
 
-- **Add a crouching mechanic, i.e., add a character controller in a way that the player has to crouch to reach a certain part of the world.** (0.5):<br>
+- **Add a crouching mechanic, i.e., add a character controller, so the player has to crouch to reach a certain part of the world** (0.5 points):<br>
 As mentioned above, there is a floating wall that is low enough to not let the player through, except with crouch. The Character Controller adjusts the capsule collider's height dynamically according to the position of the head, while a Character Controller Driver fixes the minimum height to 0, so that the player always stays above the floor.
 
 
