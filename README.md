@@ -1,10 +1,17 @@
 # Aalto University
 # Coding Virtual Worlds - Assignment 3
 
-Third assignment of the course Coding Virtual Worlds, held at Aalto University. The assignment consists in the creation of a simple Bowling VR game, as well as a simple scene that can be explored by moving around using the Oculus controllers.<br>
+Third assignment of the course Coding Virtual Worlds, held at Aalto University. The assignment consists in the creation of a simple Bowling VR game, as well as a simple scene that can be explored by moving around using the Oculus controllers.
+
+<div  align="center">
+ <video src="https://github.com/alex-atanassov/cvw-vr-bowling/assets/79805163/677378d1-2f28-4f06-acdf-0fa594f86411" width="80%"/>
+</div >
+
+## Basic features
+
 This assignment was focused on learning the main functionalities provided by the XR Interaction Toolkit, including teleportation, continuous movement, snap movement, grab/release interactions and others.
 
-More in detail, my implementation covers the following working functionalities:
+In detail, my implementation covers the following working functionalities:
 
 
 - **Ball can be thrown and slips nicely** (0.5 point):<br>
